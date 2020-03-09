@@ -103,7 +103,7 @@ const AddCompanyForm: FunctionComponent<AddEntityFormProps> = ({
             <div className="form-group" key={item.id}>
               <label>Name</label>
               <input
-                name={`${relationshipFields.companies}[${index}].name`}
+                name={`${relationshipFields.companies}[${index}].companyName`}
                 className="form-control"
                 type="text"
                 ref={register({ required: true })}

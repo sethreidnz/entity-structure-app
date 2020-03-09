@@ -20,6 +20,7 @@ const Home: FunctionComponent = () => {
   const [companies, setCompanies] = useState<Company[]>([]);
   const [isUpdating, setIsUpdating] = useState(false);
   const addCompany = async (company: Company) => {
+    console.log(company);
     setIsUpdating(true);
     setShowCompanyForm(false);
     try {
@@ -33,7 +34,7 @@ const Home: FunctionComponent = () => {
   if (isUpdating) return <div>Loading...</div>;
   return (
     <div className="Home">
-      <CompanyList companies={companies}/>
+      <CompanyList companies={companies} />
       <div className="row">
         <div className="col-sm">
           {!showCompanyForm ? (

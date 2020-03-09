@@ -23,7 +23,7 @@ const CompanyItem: FunctionComponent<CompanyItemProps> = ({ company }) => (
               {person.name}:
               <ul>
                 <li>Relationship: {person.relationship}</li>
-                <li>shareholding: {person.shareholding}</li>
+                <li>Shareholding: {person.shareholding}</li>
               </ul>
             </li>
           ))}
@@ -38,7 +38,7 @@ const CompanyItem: FunctionComponent<CompanyItemProps> = ({ company }) => (
             <li key={index}>
               {company.companyName}:
               <ul>
-                <li>shareholding: {company.shareholding}</li>
+                <li>Shareholding: {company.shareholding}</li>
               </ul>
             </li>
           ))}
